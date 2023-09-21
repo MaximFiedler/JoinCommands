@@ -5,4 +5,4 @@ api-version: 1.19
 description: Execute commands as console or player on certain events
 
 commands:
-  - joincommands-reload
+  - joincommandsreload

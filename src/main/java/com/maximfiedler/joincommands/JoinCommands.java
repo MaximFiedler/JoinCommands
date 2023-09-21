@@ -11,7 +11,7 @@ public final class JoinCommands extends JavaPlugin {
     public void onEnable() {
         var config = new Config();
         registerListeners(config);
-        getCommand("joincommands-reload").setExecutor(new ReloadCommand(config));
+        getCommand("joincommandsreload").setExecutor(new ReloadCommand(config));
     }
 
     private void registerListeners(Config config) {
