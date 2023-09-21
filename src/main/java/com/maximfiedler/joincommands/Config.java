@@ -52,11 +52,11 @@ public class Config {
     }
 
     public void reload() {
-        this.fileJoin = new File("plugins/AdvancedJoinCommands", "PlayerJoin-Commands.yml");
-        this.filefirstJoin = new File("plugins/AdvancedJoinCommands", "PlayerFirstJoin-Commands.yml");
-        this.fileQuit = new File("plugins/AdvancedJoinCommands", "PlayerQuit-Commands.yml");
-        this.fileDeath = new File("plugins/AdvancedJoinCommands", "PlayerDeath-Commands.yml");
-        this.fileSwitch = new File("plugins/AdvancedJoinCommands", "PlayerSwitchWorld-Commands.yml");
+        this.cfgJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+        this.cfgFirstJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+        this.cfgQuit = new YamlConfiguration().loadConfiguration(fileQuit);
+        this.cfgDeath = new YamlConfiguration().loadConfiguration(fileDeath);
+        this.cfgSwitch = new YamlConfiguration().loadConfiguration(fileSwitch);
         initValues();
     }
 
