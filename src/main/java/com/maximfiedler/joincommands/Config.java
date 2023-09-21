@@ -63,10 +63,10 @@ public class Config {
     public void saveConfig() {
         try {
             cfgJoin.save(fileJoin);
-            cfgJoin.save(filefirstJoin);
-            cfgJoin.save(fileQuit);
-            cfgJoin.save(fileDeath);
-            cfgJoin.save(fileSwitch);
+            cfgFirstJoin.save(filefirstJoin);
+            cfgQuit.save(fileQuit);
+            cfgDeath.save(fileDeath);
+            cfgSwitch.save(fileSwitch);
         } catch (IOException e) {
             e.printStackTrace();
         }
