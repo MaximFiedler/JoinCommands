@@ -1,5 +1,6 @@
 package com.maximfiedler.joincommands;
 
+import com.maximfiedler.joincommands.commands.ReloadCommand;
 import com.maximfiedler.joincommands.listeners.*;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -10,6 +11,7 @@ public final class JoinCommands extends JavaPlugin {
     public void onEnable() {
         var config = new Config();
         registerListeners(config);
+        getCommand("joincommands-reload").setExecutor(new ReloadCommand(config));
     }
 
     private void registerListeners(Config config) {

@@ -2,3 +2,6 @@ name: JoinCommands
 version: '${version}'
 main: com.maximfiedler.joincommands.JoinCommands
 api-version: 1.19
+
+commands:
+  - joincommands-reload
