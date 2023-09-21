@@ -1,13 +1,27 @@
 package com.maximfiedler.joincommands;
 
+import com.maximfiedler.joincommands.listeners.*;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class JoinCommands extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        var config = new Config();
+        registerListeners(config);
+    }
 
+    private void registerListeners(Config config) {
+        register(new PlayerDeathEvent(config));
+        register(new PlayerFirstJoinListener(config));
+        register(new PlayerJoinListener(config));
+        register(new PlayerQuitListener(config));
+        register(new PlayerSwitchWorldListener(config));
+    }
+
+    private void register(Listener listener) {
+        getServer().getPluginManager().registerEvents(listener, this);
     }
 
 }

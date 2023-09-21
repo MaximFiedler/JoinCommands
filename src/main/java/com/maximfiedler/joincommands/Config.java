@@ -11,24 +11,23 @@ import java.util.List;
 
 @Getter
 public class Config {
-    @Getter private File fileJoin = new File("plugins/AdvancedJoinCommands", "PlayerJoin-Commands.yml");
-    @Getter private File filefirstJoin = new File("plugins/AdvancedJoinCommands", "PlayerFirstJoin-Commands.yml");
-    @Getter private File fileQuit = new File("plugins/AdvancedJoinCommands", "PlayerQuit-Commands.yml");
-    @Getter private File fileDeath = new File("plugins/AdvancedJoinCommands", "PlayerDeath-Commands.yml");
-    @Getter private File fileSwitch = new File("plugins/AdvancedJoinCommands", "PlayerSwitchWorld-Commands.yml");
+    private File fileJoin = new File("plugins/AdvancedJoinCommands", "PlayerJoin-Commands.yml");
+    private File filefirstJoin = new File("plugins/AdvancedJoinCommands", "PlayerFirstJoin-Commands.yml");
+    private File fileQuit = new File("plugins/AdvancedJoinCommands", "PlayerQuit-Commands.yml");
+    private File fileDeath = new File("plugins/AdvancedJoinCommands", "PlayerDeath-Commands.yml");
+    private File fileSwitch = new File("plugins/AdvancedJoinCommands", "PlayerSwitchWorld-Commands.yml");
 
-    @Getter private YamlConfiguration cfgJoin = new YamlConfiguration().loadConfiguration(fileJoin);
-    @Getter private YamlConfiguration cfgFirstJoin = new YamlConfiguration().loadConfiguration(fileJoin);
-    @Getter private YamlConfiguration cfgQuit = new YamlConfiguration().loadConfiguration(fileQuit);
-    @Getter private YamlConfiguration cfgDeath = new YamlConfiguration().loadConfiguration(fileDeath);
-    @Getter private YamlConfiguration cfgSwitch = new YamlConfiguration().loadConfiguration(fileSwitch);
+    private YamlConfiguration cfgJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+    private YamlConfiguration cfgFirstJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+    private YamlConfiguration cfgQuit = new YamlConfiguration().loadConfiguration(fileQuit);
+    private YamlConfiguration cfgDeath = new YamlConfiguration().loadConfiguration(fileDeath);
+    private YamlConfiguration cfgSwitch = new YamlConfiguration().loadConfiguration(fileSwitch);
 
-
-    public Commands commandsJoin;
-    public Commands commandsFirstJoin;
-    public Commands commandsQuit;
-    public Commands commandsDeath;
-    public Commands commandsSwitch;
+    private Commands commandsJoin;
+    private Commands commandsFirstJoin;
+    private Commands commandsQuit;
+    private Commands commandsDeath;
+    private Commands commandsSwitch;
 
 
     public Config() {

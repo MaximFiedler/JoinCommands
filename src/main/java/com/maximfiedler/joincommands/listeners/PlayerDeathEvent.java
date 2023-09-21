@@ -1,4 +1,9 @@
 package com.maximfiedler.joincommands.listeners;
 
-public class PlayerDeathEvent {
+import com.maximfiedler.joincommands.Config;
+import org.bukkit.event.Listener;
+
+public class PlayerDeathEvent implements Listener {
+    public PlayerDeathEvent(Config config) {
+    }
 }
