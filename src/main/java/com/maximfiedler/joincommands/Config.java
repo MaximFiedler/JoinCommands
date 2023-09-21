@@ -74,6 +74,7 @@ public class Config {
 
     public void performCommands(Player player, Commands commands) {
         for(String command : commands.commandsPlayer) {
+            if(command.contains("with your commands") || command.contains("replace these lines")) continue;
             player.performCommand(command.replace("%player%", player.getName()));
         }
         for(String command : commands.commandsConsole) {
