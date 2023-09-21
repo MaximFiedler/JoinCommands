@@ -7,7 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 public class ReloadCommand implements CommandExecutor {
-    private Config config;
+    private final Config config;
     public ReloadCommand(Config config) {
         this.config = config;
     }

@@ -15,7 +15,7 @@ public final class JoinCommands extends JavaPlugin {
     }
 
     private void registerListeners(Config config) {
-        register(new PlayerDeathEvent(config));
+        register(new PlayerDeathListener(config));
         register(new PlayerFirstJoinListener(config));
         register(new PlayerJoinListener(config));
         register(new PlayerQuitListener(config));

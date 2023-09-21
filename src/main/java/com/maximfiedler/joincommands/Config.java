@@ -1,7 +1,9 @@
 package com.maximfiedler.joincommands;
 
 import lombok.Getter;
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 
 import java.io.File;
 import java.io.IOException;
@@ -67,6 +69,16 @@ public class Config {
             cfgJoin.save(fileSwitch);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void performCommands(Player player, Commands commands) {
+        for(String command : commands.commandsPlayer) {
+            player.performCommand(command.replace("%player%", player.getName()));
+        }
+        for(String command : commands.commandsConsole) {
+            if(command.contains("with your commands") || command.contains("replace these lines")) continue;
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player%", player.getName()));
         }
     }
 
