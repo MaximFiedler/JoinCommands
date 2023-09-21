@@ -26,5 +26,5 @@ You can use the **%player%** placeholder in the commands
 
 ## Command
 > **Note**
-> Need the `joincommands.reload` permission
+> Need the `joincommands.reload` permission  
 /joincommands-reload
