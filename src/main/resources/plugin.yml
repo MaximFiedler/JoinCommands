@@ -3,6 +3,7 @@ version: '${version}'
 main: com.maximfiedler.joincommands.JoinCommands
 api-version: 1.19
 description: Execute commands as console or player on certain events
+author: MaximFiedler
 
 commands:
   joincommands-reload:
