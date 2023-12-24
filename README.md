@@ -25,7 +25,7 @@ The commands can be executed by the console or the player
 You can use the **%player%** placeholder in the commands
 
 ## Command
-> **Note**
+> [!NOTE]  
 > Need the `joincommands.reload` permission
 
 /joincommands-reload
