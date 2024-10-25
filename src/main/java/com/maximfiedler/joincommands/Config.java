@@ -20,7 +20,7 @@ public class Config {
     private File fileSwitch = new File("plugins/AdvancedJoinCommands", "PlayerSwitchWorld-Commands.yml");
 
     private YamlConfiguration cfgJoin = new YamlConfiguration().loadConfiguration(fileJoin);
-    private YamlConfiguration cfgFirstJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+    private YamlConfiguration cfgFirstJoin = new YamlConfiguration().loadConfiguration(filefirstJoin);
     private YamlConfiguration cfgQuit = new YamlConfiguration().loadConfiguration(fileQuit);
     private YamlConfiguration cfgDeath = new YamlConfiguration().loadConfiguration(fileDeath);
     private YamlConfiguration cfgSwitch = new YamlConfiguration().loadConfiguration(fileSwitch);
@@ -53,7 +53,7 @@ public class Config {
 
     public void reload() {
         this.cfgJoin = new YamlConfiguration().loadConfiguration(fileJoin);
-        this.cfgFirstJoin = new YamlConfiguration().loadConfiguration(fileJoin);
+        this.cfgFirstJoin = new YamlConfiguration().loadConfiguration(filefirstJoin);
         this.cfgQuit = new YamlConfiguration().loadConfiguration(fileQuit);
         this.cfgDeath = new YamlConfiguration().loadConfiguration(fileDeath);
         this.cfgSwitch = new YamlConfiguration().loadConfiguration(fileSwitch);
