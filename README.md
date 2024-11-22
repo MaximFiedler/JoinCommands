@@ -1,6 +1,7 @@
 <div align="center">
 <img width="700" src="https://github.com/max1mde/JoinCommands/assets/114857048/17bf0522-0cc2-4361-aa31-0b04ce13de14">
 <p>Spigot 1.20</p>  
+<a href="https://discord.gg/2UTkYj26B4" target="_blank"><img src="https://img.shields.io/badge/Discord_Server-7289DA?style=flat&logo=discord&logoColor=white" alt="Join Discord Server" style="border-radius: 15px; height: 20px;"></a>  
 </div>
 
 ## Events
